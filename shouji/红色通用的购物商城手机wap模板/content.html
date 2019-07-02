@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="wrw" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>商城模板</title>
+		<link id="link1" rel="stylesheet" href="css/public.css?v=3114" />
+		<link id="link2" rel="stylesheet" href="css/style.css?v=3e" />
+	<script type="text/javascript" src="js/jQuery.js"></script>
+		<script type="text/javascript" src="js/swipe.js"></script>
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script>
+			$(function() {	
+				new Swipe(document.getElementById('banner_box'), {
+				speed:500,
+				auto:false,
+				callback: function(){
+					var lis = $(this.element).next("ol").children();
+					lis.removeClass("on").eq(this.index).addClass("on");
+				}
+			});
+			})
+			
+			function showTip(){
+				$(".addshopTip").show();
+				setTimeout(function(){
+					
+					$(".addshopTip").fadeOut(800);
+					
+				},1000)				
+			}
+		</script>
+	</head>
+
+	<body style="background-color: #F2F2F2;">
+		<section style="margin-top: 40px;">
+			<!--图片轮播效果-->
+			<div style="-webkit-transform:translate3d(0,0,0);">
+
+				<div id="banner_box" class="box_swipe" style="visibility: visible;">
+					<ul style="list-style: none; width: 4480px; transition: 500ms; -webkit-transition: 500ms; -webkit-transform: translate3d(-1280px, 0, 0);">
+						<li style="width: 640px; display: table-cell; vertical-align: top;">
+							<a onclick="return false;">
+								<img src="img/ad4.jpg" alt="1" style="width:100%;"> </a>
+						</li>
+						<li style="width: 640px; display: table-cell; vertical-align: top;">
+							<a onclick="return false;">
+								<img src="img/ad1.jpg" alt="2" style="width:100%;"></a>
+						</li>
+						<li style="width: 640px; display: table-cell; vertical-align: top;">
+							<a onclick="return false;">
+								<img src="img/ad3.jpg" alt="3" style="width:100%;"> </a>
+						</li>
+						<li style="width: 640px; display: table-cell; vertical-align: top;">
+							<a onclick="return false;">
+								<img src="img/ad5.jpg" alt="4" style="width:100%;"> </a>
+						</li>
+						<li style="width: 640px; display: table-cell; vertical-align: top;">
+							<a onclick="return false;">
+								<img src="img/ad2.jpg" alt="5" style="width:100%;"> </a>
+						</li>
+						<li style="width: 640px; display: table-cell; vertical-align: top;">
+							<a onclick="return false;">
+								<img src="img/ad8.jpg" alt="6" style="width:100%;"> </a>
+						</li>
+						<li style="width: 640px; display: table-cell; vertical-align: top;">
+							<a onclick="return false;">
+								<img src="img/ad9.jpg" alt="7" style="width:100%;"> </a>
+						</li>
+					</ul>
+					<ol>
+						<li class="on"></li>
+						<li class=""></li>
+						<li class=""></li>
+						<li class=""></li>
+						<li class=""></li>
+						<li class=""></li>
+						<li class=""></li>
+					</ol>
+				</div>
+			</div>
+		</section>
+		<header>
+			<div class="navtitle">
+				<a href="javascript:history.back(-1)">
+					<span style=" float: left;"><i class="icon-href">&#x4a;</i>						
+					</span>
+				</a>
+				<span class="n-title">商品详情</span>
+
+				<a href=" shopcar.html">
+					<span style="float: right; margin-right: 10px;">
+						<i class="icon-href">&#xe015;</i>
+					</span>
+				</a>
+			</div>
+		</header>
+		<section>
+			<ul class="plist3">
+				<li>
+					<div class="info">
+						<p>(第1期）iPhone6 4.7英寸 64G 苹果手机电脑第二排测试内容超出显示省第二排测试内容超出显示省第二排测试内容超出显示省</p>		
+						<span class="price">微信价：￥<i>42</i>.00</span>
+						<span class="oldprice"><del>原价：￥84.00</del></span>
+						
+					</div>	
+				</li>
+			</ul>
+			<!--<p class="menu">请选择颜色、尺寸<span style="float:right" class="icon-end">&#x35;</span></p>-->
+			<p class="menu">图文详情<i>(建议在wifi下查看)</i></p>
+			<div class="Miaoshu"><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2ZUlEgVXXXXbaXpXXXXXXXXXX_!!2572608633.jpg" /> <img src="https://img.alicdn.com/imgextra/i2/2572608633/TB2jkhTgVXXXXXpXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i4/2572608633/TB2esRNgVXXXXaWXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i2/2572608633/TB2j5p6gVXXXXbmXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i1/2572608633/TB24mtEgVXXXXb6XpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2yABHgVXXXXa5XpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i1/2572608633/TB2Ajl4gVXXXXbDXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i2/2572608633/TB2xpNQgVXXXXXCXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i4/2572608633/TB2L7tSgVXXXXXeXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i4/2572608633/TB24HmbgVXXXXXGXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i1/2572608633/TB2lnxHgVXXXXbkXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i4/2572608633/TB2FhlCgVXXXXchXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB23VCXgVXXXXX2XXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2czpSgVXXXXXDXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2rnycgVXXXXXoXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i1/2572608633/TB2S3X1gVXXXXb6XXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i1/2572608633/TB2HOBOgVXXXXaiXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2YHhNgVXXXXaKXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i2/2572608633/TB2IX1bgVXXXXXOXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i1/2572608633/TB281WcgVXXXXXwXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2r6F8gVXXXXaIXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i1/2572608633/TB2L1xLgVXXXXaVXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i4/2572608633/TB25mh5gVXXXXa_XXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i4/2572608633/TB20Wh4gVXXXXbpXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i1/2572608633/TB2C2XQgVXXXXXoXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i2/2572608633/TB2JUFYgVXXXXcyXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i4/2572608633/TB2qUNTgVXXXXcrXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i1/2572608633/TB2pHRIgVXXXXaSXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2FodMgVXXXXawXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i4/2572608633/TB27.4FgVXXXXbZXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2KkKbgVXXXXXsXXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2IERHgVXXXXaWXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB2Y_JLgVXXXXaLXpXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i4/2572608633/TB2_2N.gVXXXXX4XXXXXXXXXXXX_!!2572608633.jpg" /><img src="https://img.alicdn.com/imgextra/i3/2572608633/TB23xFSgVXXXXX2XpXXXXXXXXXX_!!2572608633.jpg" />
+</div>
+		</section>
+		
+		<section>
+			<div class="btngroup">			
+				<a href="shopcar.html"><button class="tip-btn orange">立即购买</button></a>
+				<button class="tip-btn yellow" onclick="showTip()">加入购物车</button>
+			</div>
+		</section>
+		<section>
+			<div class="addshopTip none">
+				添加购物车成功！
+			</div>
+		</section>
+	</body>
+
+</html>

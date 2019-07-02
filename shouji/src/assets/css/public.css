@@ -1,0 +1,239 @@
+@charset "utf-8";
+/*reset
+-------------------------------------------------------------- */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+  margin: auto;
+  display: block;
+}
+legend {
+  display: none;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+ins {
+  text-decoration: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+button{border: 0;}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+input[type="text"] {
+  -moz-border-sizing:content-box;
+  -webkit-border-sizing:content-box;
+  border-sizing:content-box;
+  line-height: 100%;
+  vertical-align: middle;
+}
+span{
+	display:inline-block;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent; 
+  color: #333;
+}
+a:link,a:visited,a:hover,a:active{
+  outline: none;  
+  color: #333333;
+}
+a:focus {
+  outline: none;
+}
+p{
+  -webkit-tap-highlight-color: transparent;	
+}
+b {
+  font-weight: normal;
+}
+i {
+  font-style: normal;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+body{ 
+  font-size: 12px; 
+  min-width: 320px; 
+  /*font-family: Helvetica,STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;*/
+  font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+  max-width: 640px;
+  height: 100%;
+  margin: 0 auto; 
+  color: #323232;
+  
+  
+}
+html{height: 100%;}
+/*活动结束提示弹层---------------------------------*/
+.end-tip{
+  width: 84%;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  position:absolute;
+  top:50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0 5px;
+}
+.end-tip-txt{
+  padding: 10px 10px 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.tip-btn {
+display:inline;
+width: 35%;
+height: 32px;
+margin: 8px 20px;
+border-radius: 3px;
+text-align: center;
+font-size: 14px;
+color: #FFFFFF;
+line-height: 30px;
+font-family: "微软雅黑";
+}
+.orange{
+	background:#fe4d01;
+}
+.yellow{
+	background:#fe9c01;
+}
+.red{
+	background:#d93229;
+}
+
+/*转发提示------------------------------*/
+.transprent-wrap{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0,0,0,0.9);
+}
+.transprent-forward{
+  /* background-image:url(../images/rule.png);; */
+  /* background-image:url(../img/);; */
+  background-size: 280px;
+  background-position: right 7%;
+  background-repeat: no-repeat;
+}
+.forward-tip{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  left: 5%;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+}
+.forward-tip b{
+  color: #ffe344;
+}
+/*帮助提示---------------------------------*/
+.transprent-help{
+  height:680px !important;
+  width:100%;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  background-color: rgba(0,0,0,0.9);
+  z-index: 10;
+  /* background-image:url(../images/sheep/bang.png); */
+  background-repeat: no-repeat;
+  background-position: center 172px;
+  background-size: 320px 174px;
+}
+.hgroup{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 12%;
+  text-align: center;
+  line-height: 1.8;
+}
+.hgroup h1{
+  color: #fc0;
+  font-size: 20px;
+}
+.hgroup h2{
+  color: #fff;
+  font-size: 16px;
+}
+.close-btn{
+  display: block;
+height: 18px;
+border-radius: 5px;
+position: absolute;
+left: 5%;
+top: 65%;
+right: 5%;
+background: -webkit-linear-gradient(top,#f4b63f,#f5a537,#f59730);
+/* box-shadow: 0 3px 0 #ce710d; */
+text-align: center;
+font-size: 11px;
+/* line-height: 32px; */
+color: #fff;
+/* text-shadow: 1px 1px 1px rgba(0,0,0,0.25); */
+padding: 3px 5px;
+width: 60px;
+}
